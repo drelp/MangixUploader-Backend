@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mangix:
+    build:
+      context: mangix-fe
+      dockerfile: Dockerfile
+    container_name: mangix-fe
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./mangix/storage:/storage
+      - ./mangix/logs:/logs
+      - ./mangix/backup:/backup
+      - /etc/localtime:/etc/localtime
+    restart: always
