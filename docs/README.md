@@ -3,6 +3,10 @@ mvn clean package
 mvn clean package -DskipTests
 
 cd docker
+cp ../target/mangix-uploader-0.0.1-SNAPSHOT.jar mangix-fe/mangix-uploader.jar
+cp mangix/application.yml mangix-fe/
+cp mangix/Dockerfile mangix-fe/
+
 sudo docker-compose up mangix-mysql80
 sudo docker-compose up -d mangix-mysql80
 sudo docker-compose stop mangix-mysql80

@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: mangix-fe
     ports:
-      - "8082:8082"
+      - "8070:8070"
     volumes:
       - ./mangix/upload:/home/mangix/upload
       - /etc/localtime:/etc/localtime
