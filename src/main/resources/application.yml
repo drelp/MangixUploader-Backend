@@ -4,7 +4,7 @@ spring:
   datasource:
     username: mangix
     password: mangix123456
-    url: jdbc:mysql://127.0.0.1:3306/mangix?useUnicode=true&characterEncoding=utf-8&serverTimeZone=UTC&useSSL=false
+    url: jdbc:mysql://172.21.16.11/mangix?useUnicode=true&characterEncoding=utf-8&serverTimeZone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
