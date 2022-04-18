@@ -20,7 +20,7 @@ services:
     build:
       context: mangix-fe
       dockerfile: Dockerfile
-    container_name: mangix-fe
+    container_name: mangix-api
     ports:
       - "8070:8070"
     volumes:
